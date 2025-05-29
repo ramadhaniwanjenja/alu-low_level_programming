@@ -15,10 +15,6 @@ if (j > 0)
 {
 _putchar(',');
 _putchar(' ');
-if (product < 10)
-{
-_putchar(' ');
-}
 }
 if (product >= 10)
 {
@@ -27,6 +23,13 @@ _putchar('0' + (product / 10));
 else if (j > 0)
 {
 _putchar(' ');
+}
+if (product < 10 && j > 0)
+{
+_putchar(' ');
+}
+else if (product >= 10)
+{
 }
 _putchar('0' + (product % 10));
 j++;
