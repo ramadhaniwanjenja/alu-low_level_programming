@@ -13,15 +13,10 @@ while (j <= 9)
 int product = i * j;
 if (j > 0)
 {
+_putchar(',');
+_putchar(' ');
 if (product < 10)
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-}
-else
-{
-_putchar(',');
 _putchar(' ');
 }
 }
